@@ -21,17 +21,17 @@ public class InsertionSort {
     }
  
     public static void main(String args[]){
-         Random rand=new Random();
+        Random rand=new Random();
         int arr[]=new int[50];
         for(int i=0;i<n;i++){
             arr[i]=rand.nextInt(50);
         }
         int n=arr.length;
         long start_time=System.currentTimeMillis();
-        bubbleSort(arr, n);
+        sort(arr);
         long end_time=System.currentTimeMillis();
         System.out.println("Sorted array: ");
-        printArray(arr, n);
+        printArray(arr);
         System.out.println("Time Taken:"+(end_time-start_time));
     }
 }
